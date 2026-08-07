@@ -1,0 +1,11 @@
+name: allergies-service
+port: 8305
+lang: python
+description: "allergies-service \u2014 domain: ehr"
+http_deps:
+- patients-service
+- drug-interactions-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
